@@ -53,5 +53,5 @@ router.get('/', function (req, res, next) {
        }
        res.render('node', {email: doc.email});
     });
-```
 });
+```

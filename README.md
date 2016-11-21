@@ -116,3 +116,39 @@ and at the html add this
 [ngStyle] - gives to backgroundColor the initialized value of the member of the component named color  
 (mouseenter) (mouseleave) - events changing the color by event and therefore updating the backgroundColor  
 
+
+** Set value reference to local control and pass it to a function back to Component **
+#input is sending it's value from html to onSave function without extra parameters. 
+``` Html
+<div class="col-md-8 col-md-offset-2">
+    <div class="form-group">
+        <label for="content" >
+            <input type="text" id="content" class="form-control" #input>
+        </label>
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="onSave(input.value)">Save</button>
+</div>
+```
+In TS we know what we are waiting for - value of type string. 
+``` Javascript
+import {Component} from "@angular/core";
+/**
+ * Created by Tzvika on 11/21/2016.
+ */
+@Component({
+    selector: 'app-message-input',
+    templateUrl : './message-input.component.html'
+})
+export class MessageInputComponent{
+    onSave(value:string){
+       console.log(value);
+   }
+}
+```
+
+
+** Services **
+Used for reuse in different components.
+We can provide service on the app level or more specificaly per component when needed.
+
+

@@ -57,3 +57,23 @@ router.get('/', function (req, res, next) {
     });
 });
 ```
+
+
+**_Angular2_**
+**Property Binding** 
+Connecting to
+- DOM Properties (e.g. value, hidden)
+- Directive Properties (e.g. ngStyle
+- Component Properties
+```
+ [property] = "expression"
+```
+
+**Event Binding**
+```
+ (event) = "expression"
+```
+Connecting to 
+- User/DOM events (e.g. click, mouseover..)
+- Directive Events
+- Components Events

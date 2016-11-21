@@ -93,3 +93,15 @@ For Instance
   In HTML
   <my-component (eventName) = "expression"> </my-component>
 ```
+
+Directives use 'selector' to let Angular2 know which parts of the HTMLl code represent instructions
+like ``*ngIf``` or  ```my-component```
+``` HTML
+<section  *ngIf = "condition">
+<h1> Hi </h1>
+</section>
+
+<my-component> </my-component>
+```
+
+

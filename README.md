@@ -105,3 +105,14 @@ like ``*ngIf``` or  ```my-component```
 ```
 
 
+**Creating dynamic color toggle **  
+In the compnenet define a member color with initial color
+and at the html add this
+``` HTML
+<article class="panel panel-default" [ngStyle]="{backgroundColor:color}" (mouseenter)="color = 'green'" (mouseleave)="color = 'red'">
+</article>
+```
+
+[ngStyle] - gives to backgroundColor the initialized value of the member of the component named color  
+(mouseenter) (mouseleave) - events changing the color by event and therefore updating the backgroundColor  
+

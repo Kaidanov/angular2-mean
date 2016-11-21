@@ -59,21 +59,37 @@ router.get('/', function (req, res, next) {
 ```
 
 
-**_Angular2_**
-**Property Binding** 
-Connecting to
+**_Angular2_**  
+**1.Property Binding**   
+Connecting to  
 - DOM Properties (e.g. value, hidden)
 - Directive Properties (e.g. ngStyle
 - Component Properties
 ```
  [property] = "expression"
 ```
+For instance 
+``` 
+  in Typescript
+  @Input('Alias') propertyName
+  
+  In HTML
+  <my-component [propertyName] = "expression"> </my-component>
+```
 
-**Event Binding**
-```
- (event) = "expression"
-```
-Connecting to 
+**2.Event Binding**  
+Connecting to   
 - User/DOM events (e.g. click, mouseover..)
 - Directive Events
 - Components Events
+```
+ (event) = "expression"
+```
+For Instance
+``` 
+  in Typescript
+  @Output('Alias') eventName
+  
+  In HTML
+  <my-component (eventName) = "expression"> </my-component>
+```

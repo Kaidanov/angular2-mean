@@ -20,7 +20,7 @@ To use MongoDB after installation add packages
 For running MongoDB server
 ```
 cd E:\MongoDB\Server\3.2\bin
-E:\MongoDB\Server\3.2\bin>mongod.exe --dbpath "e:\mongodb\db db data"
+E:\MongoDB\Server\3.2\bin>mongod.exe --dbpath "e:\mongodb\db"
 ```
 
 You can also see the port the mongo is working on and init in node.js accordingly 

@@ -19,6 +19,7 @@ To use MongoDB after installation add packages
 
 For running MongoDB server
 ```
+cd E:\MongoDB\Server\3.2\bin
 E:\MongoDB\Server\3.2\bin>mongod.exe --dbpath "e:\mongodb\db db data"
 ```
 
@@ -32,6 +33,7 @@ mongoose.connect('localhost:27017/node-angular');
 
 For running MongoDB client ( just to check the validity of our data - usually will be accessed trhoough the node.js code)
 ```
+cd E:\MongoDB\Server\3.2\bin
 E:\MongoDB\Server\3.2\bin>mongo.exe 
 ```
 Can check through the client using those commands :

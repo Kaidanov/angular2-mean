@@ -5,7 +5,7 @@ Each change needs to restart
 ```
 npm run build  
 ```
-If we want to run it for production:
+If we want to run it for production: AoT - Ahead of time
 ```
 npm run build:prod
 ```
@@ -156,4 +156,7 @@ export class MessageInputComponent{
 Used for reuse in different components.
 We can provide service on the app level or more specificaly per component when needed.
 
+
+** NgModule **
+https://angular.io/docs/ts/latest/guide/ngmodule.html
 

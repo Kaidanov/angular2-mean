@@ -5,6 +5,11 @@ Each change needs to restart
 ```
 npm run build  
 ```
+If we want to run it for production:
+```
+npm run build:prod
+```
+
 
 Second Command Line to run the angular client ( views of node for now)
 ```
